@@ -1,0 +1,137 @@
+{
+	"variables": [],
+	"info": {
+		"name": "jarjar",
+		"_postman_id": "6903ee19-c0e2-fb38-893c-ce519c3eb4e2",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET /",
+			"request": {
+				"url": "http://jarjar-api.muratyaman.co.uk/",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET /clients",
+			"request": {
+				"url": "https://jarjar-api.muratyaman.co.uk/clients",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET /clients/1",
+			"request": {
+				"url": "https://jarjar-api.muratyaman.co.uk/clients/1",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "PUT /clients/1",
+			"request": {
+				"url": "https://jarjar-api.muratyaman.co.uk/clients/1",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"haci@muratyaman.co.uk\",\n    \"first_name\": \"Haci\",\n    \"last_name\": \"Yaman\",\n    \"phone\": null,\n    \"dob\": \"1976-01-01\",\n    \"address\": \"1 Bridge St\",\n    \"town\": \"Writtle\",\n    \"city\": \"Chelmsford\",\n    \"county\": \"Essex\",\n    \"country\": \"UK\",\n    \"postcode\": \"CM1 3EY\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "POST /clients",
+			"request": {
+				"url": "https://jarjar-api.muratyaman.co.uk/clients",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"muratyaman@yahoo.com\",\n    \"first_name\": \"Murat\",\n    \"last_name\": \"Yaman\",\n    \"phone\": null,\n    \"dob\": \"1996-01-01\",\n    \"address\": \"1 Bridge St\",\n    \"town\": \"Writtle\",\n    \"city\": \"Chelmsford\",\n    \"county\": \"Essex\",\n    \"country\": \"UK\",\n    \"postcode\": \"CM1 3EY\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE /clients/3",
+			"request": {
+				"url": "https://jarjar-api.muratyaman.co.uk/clients/3",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "POST /authentication",
+			"request": {
+				"url": "https://jarjar-api.muratyaman.co.uk/authentication",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"strategy\": \"local\",\n  \"email\": \"hi@example.com\",\n  \"password\": \"the-password\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET /users",
+			"request": {
+				"url": "https://jarjar-api.muratyaman.co.uk/users",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET /users/1",
+			"request": {
+				"url": "https://jarjar-api.muratyaman.co.uk/users/1",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

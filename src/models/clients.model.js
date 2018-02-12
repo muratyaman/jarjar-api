@@ -5,6 +5,7 @@ const DataTypes = Sequelize.DataTypes;
 
 module.exports = function (app) {
   const sequelizeClient = app.get('sequelizeClient');
+  // fields included by default: id, createdAt, updatedAt
   const clients = sequelizeClient.define('clients', {
     email: {
       type: DataTypes.STRING,
@@ -44,6 +45,10 @@ module.exports = function (app) {
       allowNull: true
     },
     country: {
+      type: DataTypes.STRING,
+      allowNull: true
+    },
+    postcode: {
       type: DataTypes.STRING,
       allowNull: true
     },
