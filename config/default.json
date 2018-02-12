@@ -1,9 +1,34 @@
 {
-  "host": "localhost",
+  "host": "127.0.0.1",
   "port": 3030,
   "public": "../public/",
   "paginate": {
     "default": 10,
     "max": 50
+  },
+  "postgres": "postgres://jarjaradmin:J4R.jar2018@localhost/jarjar",
+  "authentication": {
+    "secret": "96f1a010d51a3c52dc8ae18ccc285641565fecf31884f45f36f401b6807b09763483900d51541c6a424818ad9fc75073840d70872791d89fbd9562531862a48086441e2dddbd45c7e88f6adabb1fa187d20a72f68e3a752dfc6a2c17064f411f9e10692e4633bf69201852d49a277e8a2461ae7f63fbb8eb02260167513a4f80fb5e5a66549d30100a8797e4feb7f1daf70712320b3da63fff1da97ffcde5f6791c1f4b4c128df286e3de75271325601dbb6693394fb64f906c93192c19eab98cdd4bdee37a54dee4c948486a30899fc7a976570cdd8324cb3017a35a93757391316fccecac98036154e58ae2e40e17c6d0f76ee34a0192087537ae5dbfb242a",
+    "strategies": [
+      "jwt",
+      "local"
+    ],
+    "path": "/authentication",
+    "service": "users",
+    "jwt": {
+      "header": {
+        "typ": "access"
+      },
+      "audience": "https://jarjar.muratyaman.co.uk",
+      "subject": "anonymous",
+      "issuer": "feathers",
+      "algorithm": "HS256",
+      "expiresIn": "1d"
+    },
+    "local": {
+      "entity": "user",
+      "usernameField": "email",
+      "passwordField": "password"
+    }
   }
 }
